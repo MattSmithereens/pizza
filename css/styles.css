@@ -3,6 +3,16 @@ body {
    background-color: #FFCCCC;
 }
 
+/* make displayed when menu functionality established */
+.welcome {
+  display: none;
+}
+
+/* unquiet when welcome functionality is established
+.menu {
+  display: none;
+}*/
+
 .receipt {
   display: none;
 }
