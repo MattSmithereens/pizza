@@ -5,6 +5,16 @@ function Pizza(size, toppings) {
   this.toppings = toppings;
 }
 
+// pseudo code
+// Pizza.prototype.pizzaPrice = function() {
+//   if this.size contains small return 6
+//
+//   else if this.size contains medium return 8
+//
+//   else return 10
+//
+//   return amount of toppings * 2; +
+// }
 
 //
 //   Pizza.prototype.orderedPizza = function() {
@@ -26,6 +36,8 @@ $(document).ready(function() {
       var toppingArray = Array();
       $("input:checkbox[name=topping]:checked").each(function() {
     		toppingArray.push($(this).val());
+      var toppingsPrice = toppingArray.length * 2;
+      console.log(toppingsPrice);
     	});
       if (inputtedSize === undefined) {
         alert("You need to tell us what size AMAZING pizza you'd like!");
