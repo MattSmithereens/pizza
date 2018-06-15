@@ -1,10 +1,11 @@
 // business
 
-// function Pizza(size, toppingArray, price) {
-//   this.size = inputtedSize;
-//   this.toppings = toppingArray;
-//   this.price = [];
-// }
+function Pizza(size, toppings) {
+  this.size = size;
+  this.toppings = toppings;
+}
+
+
 //
 //   Pizza.prototype.orderedPizza = function() {
 //     return "you ordered a " this.size + " pizza with " + this.toppingArray;
@@ -29,7 +30,8 @@ $(document).ready(function() {
       if (inputtedSize === undefined) {
         alert("You need to tell us what size AMAZING pizza you'd like!");
       } else {
-        console.log(inputtedSize + " pizza with " + toppingArray);
+        var newPizza = new Pizza(inputtedSize, toppingArray)
+        console.log(newPizza);
       }
 
   })
