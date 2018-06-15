@@ -1,6 +1,14 @@
 body {
-   /*background-image: url("img/pizza.png");*/
-   background-color: #FFCCCC;
+   background-color: #ffcccc;
+   background-image: url("../img/bg.jpg");
+}
+
+.red {
+  color: #ff0000;
+}
+
+.buffer {
+  padding-left: 10px;
 }
 
 /* make displayed when menu functionality established */

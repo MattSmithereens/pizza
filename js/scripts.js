@@ -1,11 +1,17 @@
 // business
 
-var newPizza = function Pizza(size, [], price) {
-  this.size = inputtedSize;
-  this.toppings = [];
-  this.price = [];
-}
-
+// function Pizza(size, toppingArray, price) {
+//   this.size = inputtedSize;
+//   this.toppings = toppingArray;
+//   this.price = [];
+// }
+//
+//   Pizza.prototype.orderedPizza = function() {
+//     return "you ordered a " this.size + " pizza with " + this.toppingArray;
+//   }
+//
+// }
+//  console.log(Pizza.orderedPizza);
 // Pizza.prototype.showPie = function() {
 //   return this.size + ", " + this.price;
 // }
@@ -20,8 +26,11 @@ $(document).ready(function() {
       $("input:checkbox[name=topping]:checked").each(function() {
     		toppingArray.push($(this).val());
     	});
-      console.log(toppingArray);
-      console.log(inputtedSize);
+      if (inputtedSize === undefined) {
+        alert("You need to tell us what size AMAZING pizza you'd like!");
+      } else {
+        console.log(inputtedSize + " pizza with " + toppingArray);
+      }
 
   })
 })
