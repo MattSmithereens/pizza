@@ -10,7 +10,9 @@ Keep it simple to start! You do not need to have a complex formula for determini
 <html>
 <head>
   <title>Age of Pamparious!</title>
-<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- remove styles link for Bootstrap 3.3.7 and uncomment below if you want to use Bootstrap 4.0.0 -->
+  <!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="css/styles.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -24,7 +26,7 @@ Keep it simple to start! You do not need to have a complex formula for determini
       <h2>So you think you've had a real good pizza?<br>
       <em>Well, not like this!</em>
     </div> -->
-<!-- Potential splash/info page.  add customer input fields if you have time -->
+<!-- Potential splash/info page.  add customer input fields -->
     <div class="welcome">
       <p>Welcome to Pamparious!  Enter your name</p>
     </div>
@@ -35,53 +37,81 @@ Keep it simple to start! You do not need to have a complex formula for determini
         <br>Yeah?  Tell us how you want us to give it to you!</h2>
       </div>
       <div class="row panel">
-        <div class="col-md-3">
-          <div class="row">
-            <h3>Choose a size</h3>
-          </div>
-          <div class="row">
-            <input type="radio" name="size" value="Small"> Small 10"
-          </div>
-          <div class="row">
-            <input type="radio" name="size" value="Medium"> Medium 14"
-          </div>
-          <div class="row">
-            <input type="radio" name="size" value="Large"> Large 18"
-          </div>
-        </div>
-        <div class="col-md-7">
-          <div class="">
-            <h3>Select toppings!</h3>
+
+<!-- form -->
+        <form id="buttons" action="index-new.html" method="post">
+          <div class="col-md-3">
             <div class="row">
-              <div class="col-sm-3">
-                <input type="checkbox" name="topping" value="Pepperoni"> Pepperoni
-              </div>
-              <div class="col-sm-3">
-                <input type="checkbox" name="topping" value="Sausage"> Sausage
-              </div>
-              <div class="col-sm-3">
-                <input type="checkbox" name="topping" value="Green Peppers"> Green Peppers
-              </div>
-              <div class="col-sm-3">
-                <input type="checkbox" name="topping" value="Maple Syrup"> Maple Syrup
-              </div>
+              <h3>Choose a size</h3>
             </div>
             <div class="row">
-              <div class="col-sm-3">
-                <input type="checkbox" name="topping" value="Mushrooms"> Mushrooms
+              <label>
+                <input type="radio" name="size" value="Small"> 10" Small
+              </label>
+            </div>
+            <div class="row">
+              <label>
+                <input type="radio" name="size" value="Medium"> 15" Medium
+              </label>
+            </div>
+            <div class="row">
+              <label>
+                <input type="radio" name="size" value="Large"> 20" Large
+              </label>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="">
+              <h3>Select toppings!</h3>
+              <div class="row">
+                <div class="col-sm-3">
+                  <label>
+                    <input type="checkbox" name="topping" value="Cheese" checked> Cheese
+                  </label>
+                </div>
+                <div class="col-sm-3">
+                  <label>
+                    <input type="checkbox" name="topping" value="Red Sauce" checked> Red Sauce
+                  </label>
+                </div>
+                <div class="col-sm-3">
+                  <label>
+                    <input type="checkbox" name="topping" value="Pepperoni"> Pepperoni
+                  </label>
+                </div>
+                <div class="col-sm-3">
+                  <label>
+                    <input type="checkbox" name="topping" value="Sausage"> Sausage
+                  </label>
+                </div>
               </div>
-              <div class="col-sm-3">
-                <input type="checkbox" name="topping" value="Peppers"> Peppers
-              </div>
-              <div class="col-sm-3">
-                <input type="checkbox" name="topping" value="Kittens"> Kittens
-              </div>
-              <div class="col-sm-3">
-                <input type="checkbox" name="topping" value="Bacon"> Bacon
+              <div class="row">
+                <div class="col-sm-3">
+                  <label>
+                    <input type="checkbox" name="topping" value="Bacon"> Bacon
+                  </label>
+                </div>
+                <div class="col-sm-3">
+                  <label>
+                    <input type="checkbox" name="topping" value="Mushrooms"> Mushrooms
+                  </label>
+                </div>
+                <div class="col-sm-3">
+                  <label>
+                    <input type="checkbox" name="topping" value="Black Olives"> Black Olives
+                  </label>
+                </div>
+                <div class="col-sm-3">
+                  <label>
+                    <input type="checkbox" name="topping" value="Kitten"> Kitten
+                  </label>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+
+<!-- form end -->
+
         <div class="col-md-2">
           <div class="row">
             <h3>Price</h3>
@@ -90,18 +120,16 @@ Keep it simple to start! You do not need to have a complex formula for determini
             <p><span class="piePrice">$10</span></p>
           </div>
           <div class="row">
-            <input type="button" name="pieOrder" value="submit">
+            <button type="submit" class="btn btn-warning" name="button">Order!</button>
           </div>
+          </form>
         </div>
       </div>
-
-<!-- display receipt -->
     </div>
+<!-- display receipt -->
     <div class="receipt">
       <h2>Order Summary:</h2>
-        <ul class="output">
-
-        </ul>
+        <ul class="output"><!--output here--></ul>
     </div>
   </div>
 </body>
