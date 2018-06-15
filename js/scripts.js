@@ -1,7 +1,5 @@
-var pizza = function Pizza(size, pepperoni, veganCheese, cheese, price) {
+var pizza = function Pizza(size, toppings, 10) {
   this.size = size;
-  this.pepperoni = pepperoni;
-  this.cheese = cheese
-  this.veganCheese = veganCheese;
+  this.toppings = [];
   this.price = [];
 }
