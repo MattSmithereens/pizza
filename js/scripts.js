@@ -1,8 +1,9 @@
 // business
 
-function Pizza(size, toppings) {
+function Pizza(size, toppings, price) {
   this.size = size;
   this.toppings = toppings;
+  this.price = price;
 }
 
 // pseudo code
@@ -37,14 +38,15 @@ $(document).ready(function() {
       $("input:checkbox[name=topping]:checked").each(function() {
     		toppingArray.push($(this).val());
       var toppingsPrice = toppingArray.length * 2;
-      console.log(toppingsPrice);
-    	});
-      if (inputtedSize === undefined) {
-        alert("You need to tell us what size AMAZING pizza you'd like!");
+      if (inputtedSize === "Small") {
+        var newPizza = new Pizza(inputtedSize, toppingArray, toppingsPrice + 6);
+      } else if (inputtedSize === "Medium") {
+        var newPizza = new Pizza(inputtedSize, toppingArray, toppingsPrice + 10);
+      } else if (inputtedSize === "Large") {
+        var newPizza = new Pizza(inputtedSize, toppingArray, toppingsPrice + 14);
       } else {
-        var newPizza = new Pizza(inputtedSize, toppingArray)
-        console.log(newPizza);
-      }
-
+        alert("You need to tell us what size AMAZING pizza you'd like!");
+      } console.log(newPizza);
+    });
   })
 })
