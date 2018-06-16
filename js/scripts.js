@@ -6,6 +6,10 @@ function Pizza(size, toppings, price) {
   this.price = price;
 }
 
+function Pizzas(pies) {
+  this.pies = pies;
+}
+
 // pseudo code
 // Pizza.prototype.pizzaPrice = function() {
 //   if this.size contains small return 6
@@ -46,7 +50,11 @@ $(document).ready(function() {
         var newPizza = new Pizza(inputtedSize, toppingArray, toppingsPrice + 14);
       } else {
         alert("You need to tell us what size AMAZING pizza you'd like!");
-      } console.log(newPizza);
+      }
+      var orderedPizza = new Pizzas(Pizza);
+      // add clearing functionality
+      // add display order functionality
+      console.log(orderedPizza); //thought I could make an array of ordered pizzas.  I guess not.
     });
   })
 })
