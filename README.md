@@ -17,6 +17,7 @@ Create a website for a pizza company where a user can choose one or more individ
 ### Known Bugs
 
 1. selecting a pizza with > 1 topping causes multiple instances of that pizza to be generated before determining the final pie price.  While this can be worked around, it does cause a pizza ordered with multiple toppings and no size selected to throw the "Choose a size" alert an amount equal to the amount of toppings selected.
+1. selecting a pizza without a size still displays the pizza box
 1. no gluten free option.  Celiacs should not order from Pamparius Pizza
 
 ## Setup/Contribution Requirements
