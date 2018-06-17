@@ -32,9 +32,15 @@ Keep it simple to start! You do not need to have a complex formula for determini
     <br><br>
     <div class="menu">
       <div class="row panel">
-        <div class="buffer">
-          <h2>ARE YOU READY FOR A <span class="red">REAL GOOD PIZZA</span>?
-          <br>Yeah?  Tell us how you want us to give it to you!</h2>
+        <div class="col-md-3">
+          <img src="img/logo.gif" alt="Pamparius Logo">
+        </div>
+        <div class="col-md-9">
+          <div class="buffer">
+            <h2>ARE YOU READY FOR A <span class="red">REAL GOOD PIZZA</span>?
+            <br>Yeah?  Tell us how you want us to give it to you!</h2>
+            <span class="fineprint">Click <a href="https://www.youtube.com/watch?v=QheUzGqZDtg&t=90s" target="_blank">here</a> for the song that inspired my site's theme</span>
+          </div>
         </div>
       </div>
       <div class="row panel buffer">
@@ -137,13 +143,21 @@ Keep it simple to start! You do not need to have a complex formula for determini
 
         <div class="col-md-2">
           <div class="row">
-            <h3>Price</h3>
+            <h3>Prices</h3>
           </div>
           <div class="row">
-            <p><span class="piePrice">$10</span></p>
+            <ul>
+              <li>Small $10</li>
+              <li>Medium $14</li>
+              <li>Large $18</li>
+            </ul>
+            <span class="fineprint">* base prices are for<br>cheese and sauce pies</span>
           </div>
-          <div class="row">
-            <button type="submit" class="btn btn-warning" name="button">Order!</button>
+          <div class="row vertbuffer">
+            <button type="submit" class="btn btn-warning" name="button">Add to Order</button>
+          </div>
+          <div class="row buffer">
+            &nbsp;
           </div>
           </form>
         </div>
@@ -151,8 +165,10 @@ Keep it simple to start! You do not need to have a complex formula for determini
     </div>
 <!-- display receipt -->
     <div class="receipt">
+      <div class="row panel buffer">
       <h2>Order Summary:</h2>
         <ul class="output"><!--output here--></ul>
+      </div>
     </div>
   </div>
 </body>

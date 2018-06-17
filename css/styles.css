@@ -11,6 +11,17 @@ body {
   padding-left: 10px;
 }
 
+.vertbuffer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.fineprint {
+  font-size: 10px;
+  line-height: .8;
+  font-style: italic;
+}
+
 /* make displayed when menu functionality established */
 .welcome {
   display: none;
@@ -21,6 +32,6 @@ body {
   display: none;
 }*/
 
-.receipt {
+/* .receipt {
   display: none;
-}
+} */

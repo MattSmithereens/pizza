@@ -6,11 +6,14 @@ function Pizza(size, toppings, price) {
   this.price = price;
 }
 
+
+
 // hot n tasty user interface
 
 $(document).ready(function() {
   $("form#buttons").submit(function(event){
       event.preventDefault()
+      $(".output").show();
       var inputtedSize = $("input:radio[name=size]:checked").val();
       var toppingArray = Array()
       $("input:checkbox[name=topping]:checked").each(function() {
@@ -24,7 +27,7 @@ $(document).ready(function() {
         var newPizza = new Pizza(inputtedSize, toppingArray, toppingsPrice + 14);
       } else {
         alert("You need to tell us what size AMAZING pizza you'd like!")
-      } console.log(newPizza)
+      } $(".output").text("Your " + newPizza.size + " pizza with " + newPizza.toppings + " will be $" + newPizza.price + ".");
     })
   })
 })
