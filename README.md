@@ -11,11 +11,7 @@ Create a website for a pizza company where a user can choose one or more individ
 ### Specs
 * Allow the user to start the order process.  The base price for a small plain pizza is $10
 * Allow the user to add-on to the base pizza.  The pizza size will be added first and pizza toppings will be entered into an array.
-* When the user is finished the pizza is pushed into a hidden list and the user is given the option to continue ordering or check out.
-* ordering additional pizzas adds additional pies to the list and keeps the ordering console visible
-* checking out hides the ordering console and makes visible the user's order receipt which has been storing the pizzas as line items with size, toppings, and price listed out
-* at the bottom of the user's receipt, the total cost for all the pizzas is tallied as a final charge
-
+* When the user is finished the pizza attributes (size, toppings, price) are displayed
 
 
 ### Known Bugs

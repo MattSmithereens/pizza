@@ -22,7 +22,6 @@ body {
   font-style: italic;
 }
 
-/* make displayed when menu functionality established */
 .welcome {
   visibility: hidden;
 }
