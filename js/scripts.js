@@ -6,14 +6,12 @@ function Pizza(size, toppings, price) {
   this.price = price;
 }
 
-
-
 // hot n tasty user interface
 
 $(document).ready(function() {
   $("form#buttons").submit(function(event){
       event.preventDefault()
-      $(".output").show();
+      $(".receipt").show();
       var inputtedSize = $("input:radio[name=size]:checked").val();
       var toppingArray = Array()
       $("input:checkbox[name=topping]:checked").each(function() {

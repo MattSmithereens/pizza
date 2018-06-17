@@ -24,7 +24,7 @@ body {
 
 /* make displayed when menu functionality established */
 .welcome {
-  display: none;
+  visibility: hidden;
 }
 
 /* unquiet when welcome functionality is established
@@ -32,6 +32,6 @@ body {
   display: none;
 }*/
 
-/* .receipt {
+.receipt {
   display: none;
-} */
+}
