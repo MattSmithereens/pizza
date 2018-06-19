@@ -23,8 +23,6 @@ Pizza.prototype.pieCost = function() {
   }
 }
 
-
-
 // hot n tasty user interface
 
 $(document).ready(function() {
