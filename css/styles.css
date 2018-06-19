@@ -11,6 +11,10 @@ body {
   padding-left: 10px;
 }
 
+.pizzacat {
+  float: left;
+}
+
 .vertbuffer {
   padding-top: 10px;
   padding-bottom: 10px;
